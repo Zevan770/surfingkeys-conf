@@ -20,6 +20,7 @@ const registerKey = (domain, mapObj, siteleader) => {
     leader = domain === "global" ? "" : siteleader,
     category = categories.misc,
     description = "",
+    replace = false,
     path = "(/.*)?",
   } = mapObj
   const opts = {}
@@ -36,6 +37,9 @@ const registerKey = (domain, mapObj, siteleader) => {
   try {
     if (typeof mapObj.map !== "undefined") {
       map(alias, mapObj.map)
+      if (replace) {
+        unmap(mapObj.map)
+      }
     } else {
       mapkey(key, fullDescription, callback, opts) // t, n, r, o
     }
