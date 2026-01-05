@@ -7,6 +7,7 @@ const commonStyles = `
     background-color: var(--theme-base) !important;
     color: var(--theme-subtext1) !important;
     box-shadow: 0px 3px 15px -6px rgba(var(--theme-crust-rgb, 53,13,81), 0.7) !important;
+    border: 1px solid var(--theme-blue) !important;
   }
   #sk_omnibar .prompt {
     color: var(--theme-overlay1) !important;
@@ -28,7 +29,6 @@ const commonStyles = `
   }
   #sk_omnibar li.focused {
     background-color: var(--theme-surface0) !important;
-    color: var(--theme-crust) !important;
   }
   #sk_omnibarSearchResult > ul:nth-child(1) {
     margin-bottom: 0px !important;
