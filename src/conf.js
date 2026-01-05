@@ -6,9 +6,9 @@ export default {
   settings: {
     hintAlign: "left",
     hintCharacters: "qwertasdfgzxcvb",
-    omnibarSuggestionTimeout: 500,
+    omnibarSuggestionTimeout: 200,
     richHintsForKeystroke: 1,
-    defaultSearchEngine: "ka",
+    defaultSearchEngine: "d",
     stealFocusOnLoad: false,
     theme,
   },
