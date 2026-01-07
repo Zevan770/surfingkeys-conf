@@ -18,8 +18,6 @@ const unmaps = {
     "ow",
     "oy",
     "cp",
-    ";cp",
-    ";ap",
     "spa",
     "spb",
     "spd",
@@ -34,7 +32,6 @@ const unmaps = {
     "q",
     "ag",
     "af",
-    ";s",
     "yp",
     "p",
     "<Ctrl-j>",
@@ -271,6 +268,46 @@ maps.global = [
   //   callback:    actions.omnibar.aws,
   // },
 ]
+
+const toBeReplaced = [
+  "G",
+  "U",
+  "aq",
+  "cq",
+  "db",
+  "dh",
+  "di",
+  "e",
+  "fs",
+  "gt",
+  "gw",
+  "i",
+  "j",
+  "m",
+  "pa",
+  "pb",
+  "pc",
+  "pd",
+  "pf",
+  "ph",
+  "pj",
+  "pm",
+  "pp",
+  "ps",
+  "ql",
+  "se",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "yh",
+]
+
+toBeReplaced.forEach(
+  (k) =>
+    maps.global.push({ alias: `<Space>${k}`, map: `;${k}`, replace: true })
+)
 
 maps["amazon.com"] = [
   {
