@@ -66,6 +66,9 @@ const commonStyles = `
     background: var(--theme-surface0);
     border: 1px solid var(--theme-mauve);
   }
+  #sk_tabs .sk_tab .active {
+    background: var(--theme-crust);
+  }
   #sk_tabs .sk_tab_title {
     color: var(--theme-text);
   }
